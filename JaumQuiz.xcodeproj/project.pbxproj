@@ -15,6 +15,7 @@
 		180BE51127BCDFB200425A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180BE50F27BCDFB200425A10 /* LaunchScreen.storyboard */; };
 		180BE51927CF805300425A10 /* SubjectSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BE51827CF805300425A10 /* SubjectSelectionVC.swift */; };
 		180BE51B27D2284F00425A10 /* SinglePlayFrameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BE51A27D2284F00425A10 /* SinglePlayFrameVC.swift */; };
+		18C814DA27D38D97008ACF61 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C814D927D38D97008ACF61 /* QuestionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		180BE51227BCDFB200425A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180BE51827CF805300425A10 /* SubjectSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectSelectionVC.swift; sourceTree = "<group>"; };
 		180BE51A27D2284F00425A10 /* SinglePlayFrameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayFrameVC.swift; sourceTree = "<group>"; };
+		18C814D927D38D97008ACF61 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				180BE51227BCDFB200425A10 /* Info.plist */,
 				180BE51827CF805300425A10 /* SubjectSelectionVC.swift */,
 				180BE51A27D2284F00425A10 /* SinglePlayFrameVC.swift */,
+				18C814D927D38D97008ACF61 /* QuestionVC.swift */,
 			);
 			path = JaumQuiz;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				180BE50927BCDFB100425A10 /* ViewController.swift in Sources */,
 				180BE50527BCDFB100425A10 /* AppDelegate.swift in Sources */,
 				180BE51927CF805300425A10 /* SubjectSelectionVC.swift in Sources */,
+				18C814DA27D38D97008ACF61 /* QuestionVC.swift in Sources */,
 				180BE50727BCDFB100425A10 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

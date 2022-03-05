@@ -203,7 +203,7 @@
                                     <constraint firstAttribute="height" constant="285" id="ksF-mN-2n8"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="Ahl-nF-TJV" kind="embed" id="9nD-h6-MUj"/>
+                                    <segue destination="Ahl-nF-TJV" kind="embed" identifier="questionContainer" id="9nD-h6-MUj"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Life" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="du9-sS-qBm">
@@ -246,10 +246,10 @@
             </objects>
             <point key="canvasLocation" x="1720.289855072464" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--QuestionVC-->
         <scene sceneID="H1r-4l-CQW">
             <objects>
-                <viewController id="Ahl-nF-TJV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QVC" id="Ahl-nF-TJV" customClass="QuestionVC" customModule="JaumQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uzS-eI-OB0">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="285"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,7 +269,7 @@
                                     <constraint firstAttribute="width" constant="230" id="hL3-D3-Cf2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2cV-X5-cJQ"/>
@@ -281,6 +281,9 @@
                             <constraint firstItem="g8D-3Y-jki" firstAttribute="top" secondItem="2cV-X5-cJQ" secondAttribute="top" constant="50" id="seL-VA-r29"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jaum" destination="g8D-3Y-jki" id="ehz-IW-oHh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djd-yy-qUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

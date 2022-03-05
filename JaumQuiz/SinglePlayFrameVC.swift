@@ -5,7 +5,18 @@ class SinglePlayFrameVC: UIViewController {
     
     @IBOutlet weak var subjectLabel: UILabel!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "questionContainer" {
+            let qvc = segue.destination as! QuestionVC
+            qvc.subject = self.subject
+        }
+    }
+    
     override func viewDidLoad() {
+        
+        var answerCount: Int = 0
+        var life: Int = 0
+        
         if subject == "country" {
             self.subjectLabel.text = "나라"
         }
