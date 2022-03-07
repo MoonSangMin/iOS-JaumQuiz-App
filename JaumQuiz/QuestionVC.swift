@@ -1,6 +1,6 @@
 import UIKit
 
-class QuestionVC: UIViewController {
+class QuestionVC: UIViewController, UITextFieldDelegate {
     var subject: String = ""
     
     struct Question {
@@ -33,33 +33,51 @@ class QuestionVC: UIViewController {
     ]
     
     @IBOutlet weak var jaum: UILabel!
+    @IBOutlet weak var userInput: UITextField!
+    var ans: String = ""
     
+    func isAnswer(_ userText: String, _ answer: String){
+        if userText == answer {
+            print("정답입니다")
+        }
+        else {
+            print("틀렸습니다")
+        }
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        isAnswer(userInput.text!, ans)
+        
+        return true
+    }
     
     override func viewDidLoad() {
+        self.userInput.delegate = self
+        var rand: Int = 0
         
         if subject == "country" {
-            let rand: Int = Int.random(in: 0...1)
-            jaum.text = questions[rand]["country"]?.jaum
+            rand = Int.random(in: 0...1)
         }
         else if subject == "animal" {
-            let rand: Int = Int.random(in: 2...3)
-            jaum.text = questions[rand]["animal"]?.jaum
+            rand = Int.random(in: 2...3)
         }
         else if subject == "capital" {
-            let rand: Int = Int.random(in: 4...5)
-            jaum.text = questions[rand]["capital"]?.jaum
+            rand = Int.random(in: 4...5)
+            
         }
         else if subject == "soccerplayer" {
-            let rand: Int = Int.random(in: 6..<7)
-            jaum.text = questions[rand]["soccerplayer"]?.jaum
+            rand = Int.random(in: 6..<7)
         }
         else if subject == "song" {
-            let rand: Int = Int.random(in: 8..<9)
-            jaum.text = questions[rand]["song"]?.jaum
+            rand = Int.random(in: 8..<9)
         }
         else if subject == "food" {
-            let rand: Int = Int.random(in: 10..<11)
-            jaum.text = questions[rand]["food"]?.jaum
+            rand = Int.random(in: 10..<11)
         }
+        
+        
+        jaum.text = questions[rand][subject]?.jaum
+        ans = questions[rand][subject]!.answer
+        
     }
 }

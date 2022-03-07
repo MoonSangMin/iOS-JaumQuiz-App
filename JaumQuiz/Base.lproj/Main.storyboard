@@ -283,6 +283,7 @@
                     </view>
                     <connections>
                         <outlet property="jaum" destination="g8D-3Y-jki" id="ehz-IW-oHh"/>
+                        <outlet property="userInput" destination="0o5-MG-H4u" id="SJ1-ph-EXV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djd-yy-qUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
