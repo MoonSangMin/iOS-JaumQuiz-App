@@ -15,7 +15,7 @@ class SinglePlayFrameVC: UIViewController {
     override func viewDidLoad() {
         
         //var answerCount: Int = 0
-        //var life: Int = 0
+        //var life: Int = 3
         
         if subject == "country" {
             self.subjectLabel.text = "나라"

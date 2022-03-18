@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -72,13 +72,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmA-iX-xfN">
-                                <rect key="frame" x="124.5" y="110" width="165" height="54"/>
+                                <rect key="frame" x="124.5" y="154" width="165" height="54"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGV-eB-ycK">
-                                <rect key="frame" x="62" y="199" width="90" height="40"/>
+                                <rect key="frame" x="62" y="243" width="90" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="q7B-zv-Muc"/>
                                     <constraint firstAttribute="height" constant="40" id="v1U-h2-MhC"/>
@@ -92,7 +92,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cC1-b9-Atf">
-                                <rect key="frame" x="162" y="199" width="90" height="40"/>
+                                <rect key="frame" x="162" y="243" width="90" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="56y-pc-FAO"/>
                                     <constraint firstAttribute="height" constant="40" id="Qn4-oq-Cio"/>
@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csi-Zd-Pn9">
-                                <rect key="frame" x="262" y="199" width="90" height="40"/>
+                                <rect key="frame" x="262" y="243" width="90" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6H3-xF-z4x"/>
                                     <constraint firstAttribute="width" constant="90" id="N0q-3C-aKA"/>
@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xx-mP-U2K">
-                                <rect key="frame" x="62" y="259" width="90" height="40"/>
+                                <rect key="frame" x="62" y="303" width="90" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="1Dn-rq-7Ry"/>
                                     <constraint firstAttribute="width" constant="90" id="2Wo-fb-drx"/>
@@ -134,7 +134,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnZ-qb-3Mh">
-                                <rect key="frame" x="162" y="259" width="90" height="40"/>
+                                <rect key="frame" x="162" y="303" width="90" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="lrX-l3-ebM"/>
                                     <constraint firstAttribute="width" constant="90" id="pMH-Kr-flQ"/>
@@ -148,7 +148,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9u-wY-tDm">
-                                <rect key="frame" x="262" y="259" width="90" height="40"/>
+                                <rect key="frame" x="262" y="303" width="90" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="vZE-bO-jaW"/>
                                     <constraint firstAttribute="width" constant="90" id="xKn-3T-qXR"/>
