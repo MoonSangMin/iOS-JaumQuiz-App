@@ -2,8 +2,11 @@ import UIKit
 
 class SinglePlayFrameVC: UIViewController {
     var subject: String = ""
+    let ad = UIApplication.shared.delegate as? AppDelegate
     
     @IBOutlet weak var subjectLabel: UILabel!
+    @IBOutlet weak var ansCountLabel: UILabel!
+    @IBOutlet weak var lifeLabel: UILabel!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "questionContainer" {
@@ -13,9 +16,11 @@ class SinglePlayFrameVC: UIViewController {
     }
     
     override func viewDidLoad() {
-        
-        //var answerCount: Int = 0
-        //var life: Int = 3
+        self.ansCountLabel.text = "정답 수 : \(ad!.answerCount)"
+        self.lifeLabel.text = ""
+        for _ in 0..<ad!.life {
+            self.lifeLabel.text! += "★"
+        }
         
         if subject == "country" {
             self.subjectLabel.text = "나라"

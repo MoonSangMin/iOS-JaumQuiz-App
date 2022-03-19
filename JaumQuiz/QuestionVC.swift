@@ -2,18 +2,21 @@ import UIKit
 
 class QuestionVC: UIViewController, UITextFieldDelegate {
     var subject: String = ""
+    var ad = UIApplication.shared.delegate as? AppDelegate
     
     struct Question {
         var jaum: String
         var answer: String
         var difficulty: Int
         var hint: String
+        var pass: Bool
         
         init(_ jaum: String, _ answer: String, _ difficulty: Int, _ hint: String){
             self.jaum = jaum
             self.answer = answer
             self.difficulty = difficulty
             self.hint = hint
+            self.pass = false
         }
     }
     
@@ -61,9 +64,14 @@ class QuestionVC: UIViewController, UITextFieldDelegate {
     func isAnswer(_ userText: String, _ answer: String){
         if userText == answer {
             print("정답입니다")
+            ad?.answerCount += 1
         }
         else {
             print("틀렸습니다")
+            ad?.life -= 1
+            if(ad?.life == 0) {
+                print("Game Over")
+            }
         }
     }
 

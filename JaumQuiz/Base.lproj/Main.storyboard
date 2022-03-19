@@ -239,6 +239,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ansCountLabel" destination="ivU-rv-sBi" id="IGh-CM-cin"/>
+                        <outlet property="lifeLabel" destination="du9-sS-qBm" id="D8R-BW-i0n"/>
                         <outlet property="subjectLabel" destination="5VY-B9-cMU" id="NUv-pz-IPb"/>
                     </connections>
                 </viewController>
