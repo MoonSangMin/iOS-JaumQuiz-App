@@ -203,7 +203,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정답 수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivU-rv-sBi">
-                                <rect key="frame" x="60" y="204" width="49" height="21"/>
+                                <rect key="frame" x="60" y="204" width="48.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -220,7 +220,7 @@
                                     <constraint firstAttribute="width" constant="200" id="xOm-lG-h2V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0o5-MG-H4u">
@@ -231,12 +231,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zb2-5j-gjR">
+                                <rect key="frame" x="60" y="220" width="294" height="240"/>
+                                <color key="backgroundColor" red="0.66274511810000003" green="0.27843138579999999" blue="0.2823529541" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="64R-k1-hmg"/>
+                                    <constraint firstAttribute="height" constant="240" id="pIg-VG-nrQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fG9-u0-DJC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5VY-B9-cMU" firstAttribute="top" secondItem="fG9-u0-DJC" secondAttribute="top" constant="110" id="1cj-nc-VcK"/>
                             <constraint firstItem="g8D-3Y-jki" firstAttribute="top" secondItem="tV3-cz-FK4" secondAttribute="topMargin" constant="250" id="60E-8d-dIC"/>
+                            <constraint firstItem="zb2-5j-gjR" firstAttribute="top" secondItem="tV3-cz-FK4" secondAttribute="top" constant="220" id="6fU-9T-kjS"/>
+                            <constraint firstItem="zb2-5j-gjR" firstAttribute="leading" secondItem="fG9-u0-DJC" secondAttribute="leading" constant="60" id="DMS-f0-vsc"/>
                             <constraint firstItem="g8D-3Y-jki" firstAttribute="centerX" secondItem="tV3-cz-FK4" secondAttribute="centerX" id="HfI-30-Bmp"/>
                             <constraint firstItem="5VY-B9-cMU" firstAttribute="centerX" secondItem="tV3-cz-FK4" secondAttribute="centerX" id="KrT-nM-PbT"/>
                             <constraint firstItem="0o5-MG-H4u" firstAttribute="centerX" secondItem="tV3-cz-FK4" secondAttribute="centerX" id="PVV-Cj-Z3K"/>
@@ -249,6 +262,7 @@
                     </view>
                     <connections>
                         <outlet property="ansCountLabel" destination="ivU-rv-sBi" id="IGh-CM-cin"/>
+                        <outlet property="bg" destination="zb2-5j-gjR" id="J9Q-km-ON5"/>
                         <outlet property="jaum" destination="g8D-3Y-jki" id="Tj4-2b-JFc"/>
                         <outlet property="lifeLabel" destination="du9-sS-qBm" id="D8R-BW-i0n"/>
                         <outlet property="subjectLabel" destination="5VY-B9-cMU" id="NUv-pz-IPb"/>
